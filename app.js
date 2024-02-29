@@ -91,7 +91,7 @@ const showPhoneDetails = (phone) => {
     <p><span>Storage :</span>${phone?.mainFeatures?.storage}</p>
     <p><span>chipSet :</span>${phone?.mainFeatures?.chipSet}</p>
     <p><span>memory :</span>${phone?.mainFeatures?.memory}</p>
-    <p><span>GPS :</span>${phone?.others?.GPS}</p>
+    <p><span>GPS :</span>${phone?.others?.GPS || 'No GPS'}</p>
     `
     // show the modal
     my_modal.showModal();
